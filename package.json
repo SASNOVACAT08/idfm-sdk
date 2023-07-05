@@ -1,0 +1,29 @@
+{
+  "name": "@idfm-sdk/line-reports",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/api.d.ts",
+      "require": "./dist/api.cjs",
+      "import": "./dist/api.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/api.ts --dts --format cjs,esm"
+  },
+  "keywords": [],
+  "author": "Ruben Barros",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.32.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
+  }
+}
