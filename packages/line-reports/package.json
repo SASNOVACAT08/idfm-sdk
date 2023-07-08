@@ -4,16 +4,16 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/api.d.ts",
-      "require": "./dist/api.cjs",
-      "import": "./dist/api.js"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/api.ts --dts --format cjs,esm",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
     "test": "vitest"
   },
   "keywords": [],
